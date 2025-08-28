@@ -16,7 +16,7 @@ A Model Context Protocol (MCP) server that provides Google Gmail integration for
       },
       "command": "uvx",
       "args": [
-        "google-mail-mcpserver"
+        "google-gmail-mcpserver"
       ]
     }
   }
