@@ -1,0 +1,30 @@
+[project]
+name = "google-gmail-mcpserver"
+version = "0.1.0"
+description = "A MCP server for Google Gmail integration."
+authors = [
+    {name = "yanrujing", email = "rujing.yan@protagonist-ai.com"}
+]
+repository = "https://github.com/anhuaxiang/google-gmail-mcp"
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp (>=1.6.0,<2.0.0)",
+    "google-api-python-client (>=2.177.0,<3.0.0)",
+    "google-auth (>=2.40.3,<3.0.0)",
+    "google-auth-oauthlib (>=1.2.2,<2.0.0)",
+    "google-auth-httplib2 (>=0.2.0,<0.3.0)",
+]
+
+packages = [{ include = "src/google_gmail_mcpserver" }]
+
+
+[tool.poetry.scripts]
+google-gmail-mcpserver = "google_gmail_mcpserver:main"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
